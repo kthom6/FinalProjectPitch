@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    font-family: Corbel;
+}
+
+html{
+    height: 130%;
+    background-color: whitesmoke;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    background-color: whitesmoke;
+    position: fixed;
+    z-index: 10;
+}
+
+.menuItems{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 34px 8px;
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: #143648;
+    margin: 12px;
+    font-size: x-large;
+}
+
+.logo{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 24px 8px;
+}
+
+.menuIcon{
+    height: 100%;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.bar{
+    height: 6px;
+    width: 80%;
+    background-color: #143648;
+}
+
+.menu{
+    position: fixed;
+    top: 100px;
+    right: -160px;
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    min-height: 150px;
+    transition: 0.125s;
+    border-style: solid;
+    border-color: #143648;
+    z-index: 10;
+}
+
+.wrapper{
+    box-sizing: border-box;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.splash{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    text-align: center;
+}
+
+.splashimg{
+    width: 100%;
+    height: 300px;
+}
+
+.splashheader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, .8);
+    padding: 32px;
+}
+
+.information{
+    width: 500px;
+    height: 100px;
+    float: left;
+    margin-top: 24px;
+    border: #143648 solid 2px;
+    padding: 8px;
+}
+
+.topfabrics{
+    margin-top: 24px;
+}
+
+.fabrics{
+    float: left;
+    margin-top: 24px;
+    /*border: #143648 solid 2px;*/
+    padding-right: 8px;
+    position: relative;
+    text-align: center;
+}
+
+.fabricimg{
+    opacity: 0.5;
+    height: 200px;
+    width: 200px;
+}
+
+.fabricimg:hover{
+    opacity: 1.0;
+}
+
+.fabrictext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+p{
+    font-size: large;
+    text-align: center;
+    padding-top: 12px;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #143648;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+@media screen and (min-width: 800px) {
+    .menuItems{
+        display: block;
+    }
+    .menuIcon, .menu
+    {
+        display: none;
+    }
+    .wrapper{
+        flex-direction: row;
+    }
+}
